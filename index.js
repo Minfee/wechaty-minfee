@@ -2,7 +2,7 @@ const { Wechaty } = require("wechaty") // Wechaty核心包
 const { PuppetPadplus } = require("wechaty-puppet-padplus") // padplus协议包
 const superagent = require('superagent');
 
-const { PUPPET_PADPLUS_TOKEN, ROBOT_NAME } = require("./config") // token & robotName 脱敏源
+const { PUPPET_PADPLUS_TOKEN, ROBOT_NAME,JRSCKey } = require("./config") // token & robotName 脱敏源
 const WechatyFriendPass = require("wechaty-friend-pass") // plugin 好友申请自动通过
 
 const {
@@ -48,7 +48,7 @@ bot.on('message', message => {
     if (message.text() === '诗'){
         superagent
             .get('https://v2.jinrishici.com/sentence')
-            .set('X-User-Token', 'eSTjM225WDiJbdPJiJlOtUMSzTELm4ES')
+            .set('X-User-Token', JRSCKey)
             .end((err, res) => {
                 const resData = JSON.parse(res.text).data.content
                 message.say(resData).then()
