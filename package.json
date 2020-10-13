@@ -1,0 +1,23 @@
+{
+  "name": "wechaty-plugin-robot",
+  "version": "1.0.0",
+  "description": "a plugin test robot",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index"
+  },
+  "keywords": [
+    "wechaty"
+  ],
+  "author": "isboyjc",
+  "license": "ISC",
+  "dependencies": {
+    "koa-static": "^5.0.0",
+    "qrcode-terminal": "^0.12.0",
+    "superagent": "^6.1.0",
+    "wechaty": "0.39.30",
+    "wechaty-friend-pass": "^0.0.1",
+    "wechaty-plugin-contrib": "^0.6.23",
+    "wechaty-puppet-padplus": "0.7.15"
+  }
+}
