@@ -6,8 +6,7 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 tests/**/coverage/
-圈子.clock-logs/
-圈子.memory-card.json
+阿巴阿巴.memory-card.json
 plugin/
 config.js
 
